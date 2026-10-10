@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "assinatura-academia-web",
+  "account_id": "08a57b6fc07fb6bec9e92a4903dc81fe",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+  },
+  // A URL da API (NEXT_PUBLIC_API_URL) entra no build; ver .github/workflows/deploy.yml.
+  "env": {
+    "staging": {
+      "name": "assinatura-academia-web-staging",
+    },
+    "production": {
+      "name": "assinatura-academia-web",
+    },
+  },
+}

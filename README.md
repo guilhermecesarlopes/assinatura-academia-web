@@ -24,10 +24,14 @@ pnpm dev                          # web: :3000 (suba a API em :8787)
 
 ## Ambientes
 
-| Ambiente    | API                   |
-| ----------- | --------------------- |
-| dev (local) | http://localhost:8787 |
-| staging     | API de staging        |
-| production  | API de produção       |
+| Ambiente    | API                                                                     |
+| ----------- | ----------------------------------------------------------------------- |
+| dev (local) | http://localhost:8787                                                   |
+| staging     | https://assinatura-academia-api-staging.guilherme-lopes-08a.workers.dev |
+| production  | https://assinatura-academia-api.guilherme-lopes-08a.workers.dev         |
+
+Deploy (Cloudflare Workers via OpenNext): push em `main` → staging; produção pelo workflow **Deploy**
+(manual, com aprovação). Front em staging: https://assinatura-academia-web-staging.guilherme-lopes-08a.workers.dev.
+O build do OpenNext não roda bem no Windows (symlinks); localmente use `pnpm dev`.
 
 Regras do projeto: [CLAUDE.md](CLAUDE.md).
