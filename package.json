@@ -35,5 +35,10 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,json,md,yml,yaml}": "prettier --write"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.18"
+    }
   }
 }
