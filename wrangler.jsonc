@@ -4,7 +4,8 @@
   "account_id": "08a57b6fc07fb6bec9e92a4903dc81fe",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-01",
-  "compatibility_flags": ["nodejs_compat"],
+  // global_fetch_strictly_public: sem ele, fetch para outro Worker *.workers.dev da mesma conta falha.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
